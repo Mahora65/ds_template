@@ -22,13 +22,26 @@ Write about 1-2 paragraphs describing the purpose of your project.
 
 ```
 Project_folder/
-|- bin/          # contains scripts and main files that should be run
-|- config/       # config files
-|- notebooks/    # notebooks for EDA and exploration
-|- secrets       # contains api keys and secret parameters. It should be ignored from git
-|- src/          # source code - contains functions
-|- tests/        # Test files should mirror the src folder
-|- Makefile      # automatize taks through make utility
+|- bin/                 # Contains scripts and main files that should be run
+|- config/              # Config files
+|- data/
+|    |- external        # Data from third party sources
+|    |- interim         # Intermediate data that has been transform
+|    |- processed       # The final, canonical data set for modeling
+|    |- raw             # The original, immutable data dump
+|- docs/                # Data dictionaries, manuals, and all other explanatory materieals
+|- makefile             # Automatize task through make utility
+|- models/              # Trained and serialized models, model predictions, or model summaries
+|- notebooks/           # Notebooks for EDA and exploration
+|- reports/             # Generated analysis as HTML, PDF, etc.
+|    |- figures         # Generated graphics and figures to be used in reporting
+|- secrets/             # Contains api keys and secret parameters. It should be ignored from git
+|- src/                 # Source code - contains functions 
+|    |- data/           # Script to download or generate data 
+|    |- features/       # Script to turn raw data into features for modeling
+|    |- models/         # Script to train models and then use trained models to make predictions
+|    |- visualization/  # Script to create exploratory and results oriented visualiazations
+|- tests/               # Test files should mirror the src folder
 ```
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
