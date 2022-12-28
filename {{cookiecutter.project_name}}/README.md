@@ -55,8 +55,8 @@ git clone {{cookiecutter.gitlab_repo_url}}
 ### Prerequisites
 Setup your environement and install project dependencies
 ```
-conda create -n my_project python=3.10
-source activate my_project
+conda create -n {{cookiecutter.project_name}} python={{cookiecutter.python_major_version}}.{{cookiecutter.python_minor_version}}
+source activate {{cookiecutter.project_name}}
 
 python -m pip install pip-tools
 pip-compile --output-file requirements.txt requirements.in requirements_dev.in
