@@ -1,5 +1,14 @@
 ########50 characters############################
 Type: Summary
+# More Examples of Type:
+#   - feat: new feature for the user, not new feature for build script
+#   - fix: bug fix for the user, not a fix to build script
+#   - docs: changes to the documents
+#   - style: formatting, missing semi colons, etc; no production code change
+#   - refector: refectoring prodiction code, eg. rename a variable
+#   - test: adding missing tests, refectoring tests; no production code change
+#   - chore: updating grunt tasks etc; no production code change
+
 ########72 characters##################################################
 Problem
 # Problem, Task, Reason for Commit
