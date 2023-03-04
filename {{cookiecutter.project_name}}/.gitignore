@@ -129,5 +129,6 @@ conda_env/
 # osx files
 **/.DS_Store
 
-# vscode files
+# ide files
 .vscode/**
+.idea/**
