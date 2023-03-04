@@ -49,38 +49,3 @@ repos:
           entry: mypy
           language: system
           types: [python]
-    - repo: local
-      hooks:
-        - id: black
-          name: black
-          entry: black
-          language: system
-          types: [python]
-        - id: isort
-          args: ["--profile", "black"]
-          name: isort
-          entry: isort
-          language: system
-          types: [python]
-        - id: blacken-docs
-          name: blacken-docs
-          entry: blacken-docs
-          language: system
-          types: [python]
-        - id: autoflake
-          args: [ '--in-place','--recursive', '--expand-star-imports', '--remove-unused-variables']
-          name: autoflake
-          entry: autoflake
-          language: system
-          types: [python]
-        - id: pylint
-          name: pylint
-          entry: pylint
-          language: system
-          types: [python]
-        - id: mypy
-          args: [ '--no-strict-optional', '--ignore-missing-imports']
-          name: mypy
-          entry: mypy
-          language: system
-          types: [python]
