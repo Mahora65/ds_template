@@ -40,6 +40,7 @@
 |    |- data/           # Script to download or generate data 
 |    |- features/       # Script to turn raw data into features for modeling
 |    |- models/         # Script to train models and then use trained models to make predictions
+|    |- util/           # Script to store a utility method used in this project
 |    |- visualization/  # Script to create exploratory and results oriented visualiazations
 |- tests/               # Test files should mirror the src folder
 ```
@@ -52,18 +53,11 @@ These instructions will get you a copy of the project up and running on your loc
 git clone {{cookiecutter.gitlab_repo_url}}
 ```
 
-### Prerequisites
+### Project environement
 Setup your environement and install project dependencies
 ```
-conda create -n {{cookiecutter.project_name}} python={{cookiecutter.python_major_version}}.{{cookiecutter.python_minor_version}}
-source activate {{cookiecutter.project_name}}
-
-python -m pip install pip-tools
-pip-compile --output-file requirements.txt requirements.in requirements_dev.in
-python -m pip install -r requirements.txt
+make create-venv
 ```
-
-### Installing
 
 ## 🔧 Running the tests
 Tests are implemented in ./tests, you need to run the following command to run them.
