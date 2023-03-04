@@ -132,3 +132,6 @@ conda_env/
 # ide files
 .vscode/**
 .idea/**
+
+# ignore autogen requirement files
+requirements*.txt
