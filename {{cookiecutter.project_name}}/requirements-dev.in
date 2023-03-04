@@ -1,0 +1,13 @@
+# requirements for development
+-r requirements.txt
+pre_commit
+pip-tools
+pylint
+pytest
+black
+coverage
+click
+python-dotenv
+autoflake
+mypy
+blacken-docs

@@ -1,1 +1,3 @@
+# install editable version of the package
+-e .
 # required packages for the run
