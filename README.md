@@ -4,7 +4,7 @@ This is a cookiecutter template used to generate a git basic structure for data 
 ## 🔖  How to use 
 
 ```
-cookiecutter git@github.com:Mahora65/ds_template.git
+cookiecutter https://github.com/Mahora65/ds_template.git
 ```
 
 You can follow the instructions to generate your git project.
