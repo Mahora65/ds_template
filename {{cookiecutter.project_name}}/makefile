@@ -1,3 +1,12 @@
+## Create virtual environment
+.PHONY: create-venv
+create-venv:
+	test -d venv || python -m venv .venv
+	.venv/bin/activate && ( \
+	python -m pip install pip-tools; \
+	python -m pip-compile --output-file requirements.txt requirements.in requirements-dev.in; \
+	python -m pip-sync requirements.txt; \
+	)
 ## Run all pre-commit hooks
 .PHONY: precommit
 precommit:
