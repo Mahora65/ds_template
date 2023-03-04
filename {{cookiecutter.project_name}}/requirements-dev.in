@@ -12,3 +12,4 @@ autoflake
 mypy
 blacken-docs
 jupyter
+pdoc3

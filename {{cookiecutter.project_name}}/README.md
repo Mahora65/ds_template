@@ -60,9 +60,15 @@ make requirements
 ```
 
 ## 🔧 Running the tests
-Tests are implemented in ./tests, you need to run the following command to run them.
+Tests are implemented in `./tests`, you need to run the following command to run them.
 ```
 make tests
+```
+
+## 📝 Auto generate document
+Documentations are stored in `./docs`, you need to run the following command to auto generate the document
+```
+make docs
 ```
 
 ## 🚀 Deployment

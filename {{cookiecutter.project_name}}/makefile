@@ -13,15 +13,20 @@ precommit:
 ## Lint your code using pylint
 .PHONY: lint
 lint:
-	python -m pylint --version
-	find . -type f -name "*.py" | xargs python -m pylint
+	python3 -m pylint --version
+	find . -type f -name "*.py" | xargs python3 -m pylint
 ## Run tests using pytest
 .PHONY: tests
 test:
-	python -m pytest --version
-	python -m pytest tests
+	python3 -m pytest --version
+	python3 -m pytest tests
 ## Format your code using black
 .PHONY: black
 black:
-	python -m black --version
-	python -m black .
+	python3 -m black --version
+	python3 -m black .
+## autogenerate documentation using pdoc
+.PHONY: docs
+docs:
+	python3 -m pdoc --version
+	python3 -m pdoc --html --output-dir docs src

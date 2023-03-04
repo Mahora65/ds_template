@@ -12,7 +12,7 @@ You can follow the instructions to generate your git project.
 ## To Do
 - [X] Add pre-commit for local repo
 - [ ] Add feature to auto remove .gitkeep after cookiecutter installation
-- [ ] Add Sphinx for documentation
+- [X] Add pdoc for documentation
 - [ ] Add Tox for testing
 - [ ] Add DVC for data version control
 - [ ] Add MLflow tracking for model tracking
