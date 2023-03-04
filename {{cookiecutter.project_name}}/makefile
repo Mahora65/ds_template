@@ -5,7 +5,7 @@ requirements:
 	python3 -m pip install pip-tools
 	python3 -m piptools compile --upgrade --output-file requirements.txt requirements.in
 	python3 -m piptools compile --upgrade --output-file requirements-dev.txt requirements-dev.in
-	python3 -m piptools sync --upgrade requirements.txt requirements-dev.txt
+	python3 -m piptools sync requirements.txt requirements-dev.txt
 ## Run all pre-commit hooks
 .PHONY: precommit
 precommit:
@@ -25,6 +25,3 @@ test:
 black:
 	python -m black --version
 	python -m black .
-## Run ci part
-.PHONY: ci
-ci: precommit tests

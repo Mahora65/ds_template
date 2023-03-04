@@ -11,3 +11,4 @@ python-dotenv
 autoflake
 mypy
 blacken-docs
+jupyter
