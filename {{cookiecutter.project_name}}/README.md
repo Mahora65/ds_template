@@ -53,10 +53,10 @@ These instructions will get you a copy of the project up and running on your loc
 git clone {{cookiecutter.gitlab_repo_url}}
 ```
 
-### Project environement
+### Install dependencies
 Setup your environement and install project dependencies
 ```
-make create-venv
+make requirements
 ```
 
 ## 🔧 Running the tests
