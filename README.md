@@ -14,9 +14,9 @@ You can follow the instructions to generate your git project.
 - [ ] Add feature to auto remove .gitkeep after cookiecutter installation
 - [X] Add pdoc for documentation
 - [ ] Add Tox for testing
-- [ ] Add DVC for data version control
+- [ ] Add DVC for data/pipeline version control
 - [ ] Add MLflow tracking for model tracking
-- [ ] Add general logging feature
+- [ ] Add Hydra for configuration management
 
 ## Reference
 - [Generate your Github repository structure in seconds with cookiecutter](https://medium.com/@kaislar17/genenate-your-github-repository-structure-in-seconds-with-cookiecutter-829a57b71f5e)
